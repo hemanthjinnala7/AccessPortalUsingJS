@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="login.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="signupform">
+        <div class="main-bg">
+            <div class="card-container text-center">
+                <h1 class="head pt-3">Sign Up</h1>
+                <div>
+                    <div class="form-group">
+                        <input id="namesignup" type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input id="emailsignup" type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input id="passwordsignup" type="password" class="form-control" placeholder="Password">
+                        <h2 id="sign-up-message-error" class="sign-mess"></h2>
+
+                    </div>
+                </div>
+                
+                <div class="form-group mt-3 mr-2">
+                    <button  onclick="signupcheck()" class="btn btn-primary pb-1 pt-0 mt-4" > Sign Up</button>
+                </div>
+                <p class="mt-3">Already have an account? <button class="btn btn-primary" onclick="showloginform()">Login</button></p>
+            </div>  
+        </div>
+    </div>
+    <div id="loginForm" class="hidden">
+        <div class="main-bg">
+            <div class="card-container text-center">
+    
+                <h1 class="head pt-3">login</h1>
+                <div>
+                    <p  class="para">Email address</p>
+                    <input id="email-input" type="email"/>
+                    <p  class="para-1">Password</p>
+                    <input id="password-input" type="password" />
+                </div>
+                <h2 id="message-error" class="heading-2"></h2>
+                <div class="form-group mt-3 mr-2">
+                    <button type="submit"  onclick="check()" class=" logic btn btn-primary pb-1 pt-0 mt-4" >Login</button>
+                </div>
+                <button type="submit" onclick= "showsignform()" class=" logic btn btn-success pb-1 pt-0 mt-4" >sign up</button>
+            </div>  
+        </div>
+       
+    </div>
+</body>
+</html>
